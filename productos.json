@@ -1,0 +1,18 @@
+[{ "id" : 1,
+  "nombre" : "Jean",
+  "descripcion" : "Jean Azul talle 40",
+  "codigo" : 123, 
+  "foto" : "/jean.jpg",
+  "precio" : 7000,
+  "stock" : 5
+},
+{ "id" : 2,
+  "nombre" : "Camisa",
+  "descripcion" : "Camisa Blanca talle M",
+  "codigo" : 323, 
+  "foto" : "/camisa.jpg",
+  "precio" : 5000,
+  "stock" : 3
+}]
+   
+

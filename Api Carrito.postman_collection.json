@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "83d385f3-8b0f-4556-b4eb-ccaf10cd377f",
+		"name": "Api Carrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear un nuevo carrito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los productos de un Carrito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/0/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"0",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar un producto al Carrito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/0/productos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"0",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrando un carrito",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrando uno de los productos de un Carrito especifico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carrito/0/productos/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"0",
+						"productos",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

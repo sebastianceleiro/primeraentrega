@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Formulario de ingreso de Datos</title>
+        <link rel="stylesheet" type="text/css" href="/css/estilos.css" />
+    </head>
+    <body>
+        <h2>Formulario de ingreso de Productos</h2>
+        <form action="/api/productos/agregarproducto"  method="POST">
+            <label>Nombre</label><input name="nombre">
+            <label>Descripcion</label><input name="descripcion" >
+            <label>Codigo</label><input name="codigo" >
+            <label>Foto</label><input name="foto" >
+            <label>precio</label><input name="precio" >
+            <label>Stock</label><input name="stock" >
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "3210c69b-ae4b-40bb-ae43-8601bdd78448",
+		"name": "Api Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener productos cargados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un producto en concreto segun el ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar un producto segun su ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Producto Modificado\",\r\n    \"descripcion\": \"una campera\",\r\n    \"codigo\": \"camp\",\r\n    \"foto\": \"campera.jpg\",\r\n    \"precio\": \"3000\",\r\n    \"stock\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar un producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\" : \"Producto ejemplo\" ,\r\n        \"descripcion\" : \"Un producto de ejemplo\" ,\r\n        \"codigo\" : \"ADF\" , \r\n        \"foto\" : \"ejemplo.jpg\" ,\r\n        \"precio\" : 12311,\r\n        \"stock\" : 11\r\n      } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos/agregarproducto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"agregarproducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar un producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
